@@ -1,5 +1,6 @@
 Code for Arthur for the Ohio State University Production of After the Blast
 
+# Setup Process
 1. To start install the most recent version of python
 
 2. Install pygame
@@ -15,11 +16,18 @@ The Parallelized version contains the GUI for running the robot and knowing the 
 
 The Parallax servo library is not working in this code.
 
+
+
+
+# Production Info
 Created by
-Matthew Fisher | fisher.matt10@gmail.com
+
+Matthew Fisher | fisher.matt10@gmail.com 
 
 Gabe Willenberg | 
 
 For The Ohio State University Department of Theatre Film and Media Arts
+
 After the Blast November 2025
+
 Columbus, Ohio USA
