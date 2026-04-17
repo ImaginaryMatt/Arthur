@@ -1,7 +1,7 @@
 Code for Arthur for the Ohio State University Production of After the Blast
 
 # Setup Process
-1. To start install Python 3.14 the most recent version of python should work aswell.
+1. To start install Python 3.13 the most recent version of python should work as well but has not been tested.
 
 2. For windows machines install the Playstation controller driver `PlayStationAccessoriesInstaller.exe`
 
@@ -35,7 +35,7 @@ This section shows you how to get the robot running
 1. Plug in and turn on the router
 2. Connect computer to `ArthurNet`
 3. Insert the 2 batteries into Arthur and ensure the power switches on the mounts are set to on.
-4. The robot should automatically connect to the router at the IP Address `192.168.50.100` this can be changed in the `ESP32_TCP.ino` firmware.
+4. The robot should automatically connect to the router at the IP Address `192.168.50.100` this can be changed in the `ESP32_TCP.ino` firmware. It should be noted that spare ESP32's have different IP Addresses so if a board swap must be made you need to update the python code.
 5. Ensure that the IP address in the Python code is set to the same IP and start the program
 6. We would run this in VS Code for simplicity but it can be run separately.
 
