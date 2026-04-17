@@ -2,6 +2,8 @@
 # # This is a python script that sends strings to a tcp server
 # It sends values from a game controller
 
+# DON'T USE NOT WORKING
+
 #from ast import Or
 import socket
 import sys

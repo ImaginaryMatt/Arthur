@@ -2,17 +2,19 @@
 # This is a python script that sends strings to a tcp server
 # It sends values from a game controller
 
-from ast import Or
+
 import socket
 import sys
 import time
 import threading
 import FreeSimpleGUI as sg
 import queue
-from tracemalloc import start
-from turtle import left, right, st
-# from xml.etree.ElementTree import tostring
 import pygame
+# from tracemalloc import start
+# from turtle import left, right, st
+# from xml.etree.ElementTree import tostring
+# from ast import Or
+
 
 # Defining necessary state booleans
 killed = True
@@ -144,8 +146,8 @@ def run_pygame():
     joystick.init()
 
     # Set up TCP connection
-    TCP_IP = '192.168.50.100'  # IP Adress for Arthur main ESP32
-    #TCP_IP = '192.168.50.62'   # IP Adress for Arthur spare ESP32
+    TCP_IP = '192.168.50.100'  # IP Address for Arthur main ESP32
+    #TCP_IP = '192.168.50.62'   # IP Address for Arthur spare ESP32
     TCP_PORT = 80              # Replace with your server's port
 
     global sock     
@@ -163,8 +165,9 @@ def run_pygame():
             pygame.event.pump()
             
             # Drive Motor Commands
+            # Motor speed can be adjusted by tuning the max output, others adjust the motor curve
             left_y_axis = smooth_joystick(joystick.get_axis(1), deadzone=0.0, expo=3.0, max_output=0.85) * 255 + 255
-            right_y_axis = smooth_joystick(joystick.get_axis(3), deadzone=0.0, expo=3.0, max_output=0.81) * 255 + 255
+            right_y_axis = smooth_joystick(joystick.get_axis(3), deadzone=0.0, expo=3.0, max_output=0.85) * 255 + 255
             send_command(sock, 1, left_y_axis)
             send_command(sock, 2, right_y_axis)
 

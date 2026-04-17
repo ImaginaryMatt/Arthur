@@ -2,15 +2,17 @@
 # This is a python script that sends strings to a tcp server
 # It sends values from a game controller
 
-from ast import Or
+# The is an attempt to get the GUI working on macos it is not functional
+
+# from ast import Or
 import socket
 import sys
 import time
 import threading
 import FreeSimpleGUI as sg
 import queue
-from tracemalloc import start
-from turtle import left, right, st
+# from tracemalloc import start
+# from turtle import left, right, st
 # from xml.etree.ElementTree import tostring
 import pygame
 
