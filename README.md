@@ -1,7 +1,10 @@
 Code for Arthur for the Ohio State University Production of After the Blast
 
 # Setup Process
+
+1. to install git run ```winget install --id Git.Git -e --source winget``
 1. To start install Python 3.13 the most recent version of python should work as well but has not been tested.
+    1. Python.com
 
 2. For windows machines install the Playstation controller driver `PlayStationAccessoriesInstaller.exe`
 
