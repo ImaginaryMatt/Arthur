@@ -2,7 +2,10 @@ Code for Arthur for the Ohio State University Production of After the Blast
 
 # Setup Process
 
-1. to install git run ```winget install --id Git.Git -e --source winget``
+1. To install git run ```winget install --id Git.Git -e --source winget```
+
+2. navagate to the folder
+2. Run ```git clone https://github.com/ImaginaryMatt/Arthur.git```
 1. To start install Python 3.13 the most recent version of python should work as well but has not been tested.
     1. Python.com
 
